@@ -8,7 +8,7 @@ import {
   Put,
 } from '@nestjs/common';
 import { ApiOperation, ApiProperty, ApiTags } from '@nestjs/swagger';
-import { PostService } from './post.service';
+import { PostService } from '../services/post.service';
 import { Post as PostModel } from '@prisma/client';
 
 class PostDto {

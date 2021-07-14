@@ -1,6 +1,13 @@
+demo/
+/swagger-ui*
+globalConfig.json
+
 # compiled output
+/api.json
 /dist
 /node_modules
+
+# prisma
 prisma/migrations
 
 # Logs
@@ -33,3 +40,9 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# docker & k8s
+data
+
+# env
+.env
