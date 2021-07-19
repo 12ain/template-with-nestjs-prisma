@@ -1,12 +1,13 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from '../services/app.service';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiExcludeEndpoint } from '@nestjs/swagger';
 
-@ApiTags('默认')
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
+
   @Get()
+  @ApiExcludeEndpoint()
   getHello(): string {
     return this.appService.getHello();
   }
